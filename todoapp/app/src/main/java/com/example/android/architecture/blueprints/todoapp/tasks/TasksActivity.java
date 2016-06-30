@@ -34,6 +34,9 @@ import com.example.android.architecture.blueprints.todoapp.statistics.Statistics
 import com.example.android.architecture.blueprints.todoapp.util.ActivityUtils;
 import com.example.android.architecture.blueprints.todoapp.util.EspressoIdlingResource;
 
+/**
+ * shit, what the fuck data doesn't be saved to local!!!!
+ */
 public class TasksActivity extends AppCompatActivity {
 
     private static final String CURRENT_FILTERING_KEY = "CURRENT_FILTERING_KEY";
@@ -72,6 +75,7 @@ public class TasksActivity extends AppCompatActivity {
         }
 
         // Create the presenter
+        // 将fragment的presenter放在外面仅仅是为了控制过滤器吗？
         mTasksPresenter = new TasksPresenter(
                 Injection.provideTasksRepository(getApplicationContext()), tasksFragment);
 

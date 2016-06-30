@@ -232,9 +232,11 @@ public class TasksFragment extends Fragment implements TasksContract.View {
         if (getView() == null) {
             return;
         }
+        // 重新获取view，因为多线程，需要final属性
         final SwipeRefreshLayout srl =
                 (SwipeRefreshLayout) getView().findViewById(R.id.refresh_layout);
 
+        // !!!!
         // Make sure setRefreshing() is called after the layout is done with everything else.
         srl.post(new Runnable() {
             @Override

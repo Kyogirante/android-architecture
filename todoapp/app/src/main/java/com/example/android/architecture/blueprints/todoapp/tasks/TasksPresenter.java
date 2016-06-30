@@ -36,6 +36,9 @@ import static com.google.common.base.Preconditions.checkNotNull;
  */
 public class TasksPresenter implements TasksContract.Presenter {
 
+    /**
+     * 读取本地任务的帮助类，也就是Model
+     */
     private final TasksRepository mTasksRepository;
 
     private final TasksContract.View mTasksView;

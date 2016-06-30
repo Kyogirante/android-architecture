@@ -49,6 +49,12 @@ public class ScrollChildSwipeRefreshLayout extends SwipeRefreshLayout {
         return super.canChildScrollUp();
     }
 
+    /**
+     * 设置由该view来控制SwipeRefreshLayout的下拉刷新
+     * <p/>
+     * 这样的话，SwipeRefreshLayout的子View就可以不是ScrollView或者ListView.
+     * @param view
+     */
     public void setScrollUpChild(View view) {
         mScrollUpChild = view;
     }

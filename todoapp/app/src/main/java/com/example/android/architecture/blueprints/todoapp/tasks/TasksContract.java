@@ -25,6 +25,10 @@ import com.example.android.architecture.blueprints.todoapp.BasePresenter;
 import java.util.List;
 
 /**
+ * 将View和presenter放在一起，是为了建立代码上的关联吗?
+ * <p/>
+ * 也可以分开写，但是可读性不强
+ *
  * This specifies the contract between the view and the presenter.
  */
 public interface TasksContract {
